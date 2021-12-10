@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --clr-primary-soft-blue: hsl(215, 51%, 70%);
+  --clr-primary-cyan: hsl(178, 100%, 50%);
+}
+
+/* 
+
+  1. GLOBALS
+  2. CARD
+  3. GENERAL
+
+*/
+
+/* 
+  ============
+  1. GLOBALS
+  ============
+*/
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--clr-primary-soft-blue);
+}
+
+/* 
+  ============
+  1. CARD
+  ============
+*/
+.card {
+  width: 20%;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1em;
+  border-radius: 5px;
+  margin: 2em auto;
+  color: white;
+  box-shadow: 0 0 15px 30px #0c1729;
+}
+
+.card-image {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.card-content {
+  color: var(--clr-primary-soft-blue);
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info .amount,
+.card-info .duration {
+  display: flex;
+  align-items: center;
+}
+
+.card-info .amount > * + *,
+.card-info .duration > * + * {
+  margin-left: 0.4em;
+}
+
+.card-info .amount {
+  color: var(--clr-primary-cyan);
+  font-weight: 600;
+}
+
+.card-info .duration {
+  color: var(--clr-primary-soft-blue);
+}
+
+.card footer {
+  display: flex;
+  align-items: center;
+  color: var(--clr-primary-soft-blue);
+  font-size: 0.8rem;
+}
+
+.card footer b {
+  color: white;
+}
+
+.card footer * + * {
+  margin-left: 0.6em;
+}
+
+/* 
+  ============
+  3. GENERAL
+  ============
+*/
+.avatar {
+  width: 32px;
+  height: 32px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
